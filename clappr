@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clappr@latest/dist/clappr.min.js"></script>
+<style>
+html, body {
+  height: 100%;
+  width: 100%;
+}
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+}
+.player-container {
+  width: 100%;
+  height: 100%;
+}
+video {
+  object-fit: contain;
+}
+</style>
+</head>                    
+<body> <div id="player" class="player-container"></div>
+<script>
+var player = new Clappr.Player({
+  // Ecanlitv.co/inat-tv
+  // İnat TV
+  source: 'https://content.jwplatform.com/manifests/yp34SRmf.m3u8',
+  maxBufferLength: 30,
+  autoPlay: true,
+  parentId: '#player',
+  width: '100%',
+  height: '100%',
+  mute: false,
+  hideVolumeBar: true,
+  autoPlayVisible: 'partial',
+  watermark: 'https://i.hizliresim.com/EOkLlv.png',
+  position: 'top-left',
+  watermarkLink: 'https://ecanlitv.co/inat-tv/'
+})
+</script>
+</body>
+<html>
